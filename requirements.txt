@@ -272,3 +272,4 @@ xxhash==3.5.0
 yarg==0.1.9
 yarl==1.18.3
 zipp==3.21.0
+pysqlite3-binary
