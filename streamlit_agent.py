@@ -3,10 +3,12 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
+import streamlit as st
+os.eviron["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 import json
 from dotenv import load_dotenv
 
-import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage
 
 from modules.engine import create_sanjay_client, get_response
