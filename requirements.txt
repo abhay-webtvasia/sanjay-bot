@@ -6,3 +6,4 @@ langchain_text_splitters==0.3.6
 letta==0.6.25
 python-dotenv==1.0.1
 streamlit==1.41.1
+chromadb
